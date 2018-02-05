@@ -10,25 +10,25 @@ servers=[
     :hostname => "cassandra1",
     :ip => "192.168.100.11",
     :box => "ubuntu/trusty64",
-    :memory => 3000,
+    :memory => 1500,
     :cpus => 1,
-    :provisions => ["01_set_time_zone.sh",deb_cache_file,"03_install_java.sh"]
+    :provisions => ["01_set_time_zone.sh",deb_cache_file,"03_install_java.sh","04_install_cassandra.sh"]
   },
   {
     :hostname => "cassandra2",
     :ip => "192.168.100.12",
     :box => "ubuntu/trusty64",
-    :memory => 3000,
+    :memory => 1500,
     :cpus => 1,
-    :provisions => ["01_set_time_zone.sh",deb_cache_file,"03_install_java.sh"]
+    :provisions => ["01_set_time_zone.sh",deb_cache_file,"03_install_java.sh","04_install_cassandra.sh"]
   },
   {
     :hostname => "cassandra3",
     :ip => "192.168.100.13",
     :box => "ubuntu/trusty64",
-    :memory => 3000,
+    :memory => 1500,
     :cpus => 1,
-    :provisions => ["01_set_time_zone.sh",deb_cache_file,"03_install_java.sh"]
+    :provisions => ["01_set_time_zone.sh",deb_cache_file,"03_install_java.sh","04_install_cassandra.sh"]
   }
 ]
 
